@@ -3,7 +3,7 @@ This example demonstrate the implementation of JSON in swift 3.0
 
 Well hello there!
 
-This repository is meant to provide an example for display implementation if JSON in swift 3.
+This repository is meant to provide an example for display implementation of JSON in swift 3.
 
 We have implemented this in two way,
 
