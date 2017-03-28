@@ -1,0 +1,27 @@
+{
+    "employee_details": [{
+                         "name": "Ram",
+                         "job": "Developer",
+                         "age": 24
+                         }, {
+                         "name": "Rahul",
+                         "job": "Data Analyst",
+                         "age": 22
+                         }, {
+                         "name": "Sachin",
+                         "job": "HR",
+                         "age": 30
+                         }, {
+                         "name": "Anil",
+                         "job": "CEO",
+                         "age": 49
+                         }, {
+                         "name": "Deepanwita",
+                         "job": "Developer",
+                         "age": 26
+                         }, {
+                         "name": "Suresh",
+                         "job": "Team Lead",
+                         "age": 32
+                         }]
+}
