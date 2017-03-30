@@ -16,6 +16,18 @@ class EmployeeListVC: UIViewController,UITableViewDelegate, UITableViewDataSourc
     
     override func viewDidLoad() {
         super.viewDidLoad()
+       
+        loadFromFile()
+        
+        loadFromURL()
+        
+        self.employeeListTableView.tableFooterView = nil
+    }
+    
+    //MARK:
+    //MARK:- Load json from the url
+    
+    func loadFromURL(){
         
         let requestURL: NSURL = NSURL(string: "http://www.learnswiftonline.com/Samples/subway.json")!
         let urlRequest: NSMutableURLRequest = NSMutableURLRequest(url: requestURL as URL)
@@ -49,7 +61,13 @@ class EmployeeListVC: UIViewController,UITableViewDelegate, UITableViewDataSourc
             }
         }
         
-        task.resume()
+        task.resume() 
+    }
+   
+    //MARK:
+    //MARK:- Load from local file
+    
+    func loadFromFile(){
         
         var empName = ""
         var empJob = ""
@@ -102,8 +120,6 @@ class EmployeeListVC: UIViewController,UITableViewDelegate, UITableViewDataSourc
                 }
             }
         }
-        
-        self.employeeListTableView.tableFooterView = nil
     }
 
     //MARK:
